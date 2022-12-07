@@ -1,0 +1,24 @@
+spring:
+  messages:
+    encoding: UTF-8
+  thymeleaf:
+    encoding: UTF-8
+
+logging:
+  level:
+    org.springframework.web.reactive.function.client.ExchangeFunctions: DEBUG
+
+# custom.api.url.demo-api: http://demo-api-svc.api:8088
+custom.api.url.demo-api: http://localhost:7077
+
+### actuator 관련 설정 (메트릭 엔드포인트)
+### localhost:9099/actuator/prometheus
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+
+server.port:
+
+
